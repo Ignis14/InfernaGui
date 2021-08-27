@@ -46,6 +46,14 @@ local receivedBtn = Instance.new("TextButton")
 local autobuyBtn = Instance.new("TextButton")
 local OpenFrm = Instance.new("ImageLabel")
 local OpenBtn = Instance.new("TextButton")
+local Welcome = Instance.new("Frame")
+local i = Instance.new("TextLabel")
+local n = Instance.new("TextLabel")
+local f = Instance.new("TextLabel")
+local e = Instance.new("TextLabel")
+local r = Instance.new("TextLabel")
+local n_2 = Instance.new("TextLabel")
+local a = Instance.new("TextLabel")
 
 --Properties:
 
@@ -550,9 +558,106 @@ OpenBtn.TextScaled = true
 OpenBtn.TextSize = 14.000
 OpenBtn.TextWrapped = true
 
+Welcome.Name = "Welcome"
+Welcome.Parent = Inferna
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.BackgroundTransparency = 1.000
+Welcome.Size = UDim2.new(1, 0, 1, 0)
+
+i.Name = "i"
+i.Parent = Welcome
+i.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+i.BackgroundTransparency = 1.000
+i.Position = UDim2.new(0.183749974, 0, 0.329696953, 0)
+i.Size = UDim2.new(0.0918750018, 0, 0.169696972, 0)
+i.Font = Enum.Font.LuckiestGuy
+i.Text = "I"
+i.TextColor3 = Color3.fromRGB(255, 0, 0)
+i.TextScaled = true
+i.TextSize = 14.000
+i.TextWrapped = true
+
+n.Name = "n"
+n.Parent = Welcome
+n.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+n.BackgroundTransparency = 1.000
+n.Position = UDim2.new(0.27562502, 0, 0.329696953, 0)
+n.Size = UDim2.new(0.0918750018, 0, 0.169696972, 0)
+n.Font = Enum.Font.LuckiestGuy
+n.Text = "N"
+n.TextColor3 = Color3.fromRGB(255, 85, 0)
+n.TextScaled = true
+n.TextSize = 14.000
+n.TextWrapped = true
+
+f.Name = "f"
+f.Parent = Welcome
+f.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+f.BackgroundTransparency = 1.000
+f.Position = UDim2.new(0.367500037, 0, 0.329696953, 0)
+f.Size = UDim2.new(0.0918750018, 0, 0.169696972, 0)
+f.Font = Enum.Font.LuckiestGuy
+f.Text = "F"
+f.TextColor3 = Color3.fromRGB(255, 255, 0)
+f.TextScaled = true
+f.TextSize = 14.000
+f.TextWrapped = true
+
+e.Name = "e"
+e.Parent = Welcome
+e.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+e.BackgroundTransparency = 1.000
+e.Position = UDim2.new(0.459375054, 0, 0.329696953, 0)
+e.Size = UDim2.new(0.0918750018, 0, 0.169696972, 0)
+e.Font = Enum.Font.LuckiestGuy
+e.Text = "E"
+e.TextColor3 = Color3.fromRGB(85, 255, 0)
+e.TextScaled = true
+e.TextSize = 14.000
+e.TextWrapped = true
+
+r.Name = "r"
+r.Parent = Welcome
+r.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+r.BackgroundTransparency = 1.000
+r.Position = UDim2.new(0.551249981, 0, 0.329696953, 0)
+r.Size = UDim2.new(0.0918750018, 0, 0.169696972, 0)
+r.Font = Enum.Font.LuckiestGuy
+r.Text = "R"
+r.TextColor3 = Color3.fromRGB(85, 255, 255)
+r.TextScaled = true
+r.TextSize = 14.000
+r.TextWrapped = true
+
+n_2.Name = "n"
+n_2.Parent = Welcome
+n_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+n_2.BackgroundTransparency = 1.000
+n_2.Position = UDim2.new(0.643124998, 0, 0.329696953, 0)
+n_2.Size = UDim2.new(0.0918750018, 0, 0.169696972, 0)
+n_2.Font = Enum.Font.LuckiestGuy
+n_2.Text = "N"
+n_2.TextColor3 = Color3.fromRGB(85, 0, 255)
+n_2.TextScaled = true
+n_2.TextSize = 14.000
+n_2.TextWrapped = true
+
+a.Name = "a"
+a.Parent = Welcome
+a.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a.BackgroundTransparency = 1.000
+a.Position = UDim2.new(0.735000014, 0, 0.329696953, 0)
+a.Size = UDim2.new(0.0918750018, 0, 0.169696972, 0)
+a.Font = Enum.Font.LuckiestGuy
+a.Text = "A"
+a.TextColor3 = Color3.fromRGB(255, 0, 255)
+a.TextScaled = true
+a.TextSize = 14.000
+a.TextWrapped = true
+
 -- Scripts:
 
-local function EOLV_fake_script() -- PlayerBtn.textColourChange 
+local function IDGFKU_fake_script() -- PlayerBtn.textColourChange 
 	local script = Instance.new('LocalScript', PlayerBtn)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -563,8 +668,8 @@ local function EOLV_fake_script() -- PlayerBtn.textColourChange
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
 end
-coroutine.wrap(EOLV_fake_script)()
-local function RHVWFGZ_fake_script() -- PlayerBtn.LocalScript 
+coroutine.wrap(IDGFKU_fake_script)()
+local function UWZWULR_fake_script() -- PlayerBtn.LocalScript 
 	local script = Instance.new('LocalScript', PlayerBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -574,8 +679,8 @@ local function RHVWFGZ_fake_script() -- PlayerBtn.LocalScript
 		script.Parent.Parent.Parent.categories.Teams.Visible = false
 	end)
 end
-coroutine.wrap(RHVWFGZ_fake_script)()
-local function KWKBM_fake_script() -- farmBtn.textColourChange 
+coroutine.wrap(UWZWULR_fake_script)()
+local function UXQTABX_fake_script() -- farmBtn.textColourChange 
 	local script = Instance.new('LocalScript', farmBtn)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -586,8 +691,8 @@ local function KWKBM_fake_script() -- farmBtn.textColourChange
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
 end
-coroutine.wrap(KWKBM_fake_script)()
-local function EGHUTW_fake_script() -- farmBtn.LocalScript 
+coroutine.wrap(UXQTABX_fake_script)()
+local function FPKKQD_fake_script() -- farmBtn.LocalScript 
 	local script = Instance.new('LocalScript', farmBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -597,8 +702,8 @@ local function EGHUTW_fake_script() -- farmBtn.LocalScript
 		script.Parent.Parent.Parent.categories.Teams.Visible = false
 	end)
 end
-coroutine.wrap(EGHUTW_fake_script)()
-local function JEEQ_fake_script() -- teamBtn.textColourChange 
+coroutine.wrap(FPKKQD_fake_script)()
+local function KBVSSET_fake_script() -- teamBtn.textColourChange 
 	local script = Instance.new('LocalScript', teamBtn)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -609,8 +714,8 @@ local function JEEQ_fake_script() -- teamBtn.textColourChange
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
 end
-coroutine.wrap(JEEQ_fake_script)()
-local function UOUMNGY_fake_script() -- teamBtn.LocalScript 
+coroutine.wrap(KBVSSET_fake_script)()
+local function CZSPLC_fake_script() -- teamBtn.LocalScript 
 	local script = Instance.new('LocalScript', teamBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -620,8 +725,8 @@ local function UOUMNGY_fake_script() -- teamBtn.LocalScript
 		script.Parent.Parent.Parent.categories.Teams.Visible = true
 	end)
 end
-coroutine.wrap(UOUMNGY_fake_script)()
-local function BBLIHI_fake_script() -- extraBtn.textColourChange 
+coroutine.wrap(CZSPLC_fake_script)()
+local function OHPSMBM_fake_script() -- extraBtn.textColourChange 
 	local script = Instance.new('LocalScript', extraBtn)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -632,8 +737,8 @@ local function BBLIHI_fake_script() -- extraBtn.textColourChange
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
 end
-coroutine.wrap(BBLIHI_fake_script)()
-local function NMFBMMZ_fake_script() -- extraBtn.LocalScript 
+coroutine.wrap(OHPSMBM_fake_script)()
+local function HNAGDY_fake_script() -- extraBtn.LocalScript 
 	local script = Instance.new('LocalScript', extraBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -643,8 +748,8 @@ local function NMFBMMZ_fake_script() -- extraBtn.LocalScript
 		script.Parent.Parent.Parent.categories.Teams.Visible = false
 	end)
 end
-coroutine.wrap(NMFBMMZ_fake_script)()
-local function ZSZHE_fake_script() -- closeBtn.textColourChange 
+coroutine.wrap(HNAGDY_fake_script)()
+local function LOOZJU_fake_script() -- closeBtn.textColourChange 
 	local script = Instance.new('LocalScript', closeBtn)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -655,8 +760,8 @@ local function ZSZHE_fake_script() -- closeBtn.textColourChange
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
 end
-coroutine.wrap(ZSZHE_fake_script)()
-local function WDCDE_fake_script() -- closeBtn.LocalScript 
+coroutine.wrap(LOOZJU_fake_script)()
+local function XCRAY_fake_script() -- closeBtn.LocalScript 
 	local script = Instance.new('LocalScript', closeBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -664,8 +769,8 @@ local function WDCDE_fake_script() -- closeBtn.LocalScript
 		script.Parent.Parent.Parent.OpenFrm.Visible = true
 	end)
 end
-coroutine.wrap(WDCDE_fake_script)()
-local function BDVUESY_fake_script() -- altDelete.LocalScript 
+coroutine.wrap(XCRAY_fake_script)()
+local function RUZDCYN_fake_script() -- altDelete.LocalScript 
 	local script = Instance.new('LocalScript', altDelete)
 
 	local Plr = game:GetService("Players").LocalPlayer
@@ -679,24 +784,24 @@ local function BDVUESY_fake_script() -- altDelete.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(BDVUESY_fake_script)()
-local function VZFIGS_fake_script() -- wsExecute.LocalScript 
+coroutine.wrap(RUZDCYN_fake_script)()
+local function TOFX_fake_script() -- wsExecute.LocalScript 
 	local script = Instance.new('LocalScript', wsExecute)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Parent.wsAmount.Text
 	end)
 end
-coroutine.wrap(VZFIGS_fake_script)()
-local function MYJUFOA_fake_script() -- jpExecute.LocalScript 
+coroutine.wrap(TOFX_fake_script)()
+local function UVHDLAU_fake_script() -- jpExecute.LocalScript 
 	local script = Instance.new('LocalScript', jpExecute)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.Parent.jpAmount.Text
 	end)
 end
-coroutine.wrap(MYJUFOA_fake_script)()
-local function MTUKN_fake_script() -- flyBtn.LocalScript 
+coroutine.wrap(UVHDLAU_fake_script)()
+local function VURGT_fake_script() -- flyBtn.LocalScript 
 	local script = Instance.new('LocalScript', flyBtn)
 
 	local speed = 50
@@ -787,8 +892,8 @@ local function MTUKN_fake_script() -- flyBtn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MTUKN_fake_script)()
-local function UFBEI_fake_script() -- startBtn.LocalScript 
+coroutine.wrap(VURGT_fake_script)()
+local function UZAL_fake_script() -- startBtn.LocalScript 
 	local script = Instance.new('LocalScript', startBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -844,16 +949,16 @@ local function UFBEI_fake_script() -- startBtn.LocalScript
 			game.Players.LocalPlayer.Character.Head:Destroy() end
 	end)
 end
-coroutine.wrap(UFBEI_fake_script)()
-local function OPLIQ_fake_script() -- stopBtn.LocalScript 
+coroutine.wrap(UZAL_fake_script)()
+local function XEYAA_fake_script() -- stopBtn.LocalScript 
 	local script = Instance.new('LocalScript', stopBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		print("Not In Use")
 	end)
 end
-coroutine.wrap(OPLIQ_fake_script)()
-local function LAVOEYF_fake_script() -- afkBtn.LocalScript 
+coroutine.wrap(XEYAA_fake_script)()
+local function PBHHQY_fake_script() -- afkBtn.LocalScript 
 	local script = Instance.new('LocalScript', afkBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -873,8 +978,8 @@ local function LAVOEYF_fake_script() -- afkBtn.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(LAVOEYF_fake_script)()
-local function RBED_fake_script() -- Teams.LocalScript 
+coroutine.wrap(PBHHQY_fake_script)()
+local function VUERAT_fake_script() -- Teams.LocalScript 
 	local script = Instance.new('LocalScript', Teams)
 
 	local p = script.Parent
@@ -942,8 +1047,8 @@ local function RBED_fake_script() -- Teams.LocalScript
 		Event:FireServer(A_1, A_2)
 	end)
 end
-coroutine.wrap(RBED_fake_script)()
-local function YSHGRW_fake_script() -- penguinBtn.LocalScript 
+coroutine.wrap(VUERAT_fake_script)()
+local function YOWZLFZ_fake_script() -- penguinBtn.LocalScript 
 	local script = Instance.new('LocalScript', penguinBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -952,8 +1057,8 @@ local function YSHGRW_fake_script() -- penguinBtn.LocalScript
 		Event:FireServer(A_1)
 	end)
 end
-coroutine.wrap(YSHGRW_fake_script)()
-local function ZLVXPQ_fake_script() -- foxBtn.LocalScript 
+coroutine.wrap(YOWZLFZ_fake_script)()
+local function SSDAB_fake_script() -- foxBtn.LocalScript 
 	local script = Instance.new('LocalScript', foxBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -962,8 +1067,8 @@ local function ZLVXPQ_fake_script() -- foxBtn.LocalScript
 		Event:FireServer(A_1)
 	end)
 end
-coroutine.wrap(ZLVXPQ_fake_script)()
-local function NMAJMVS_fake_script() -- chickenBtn.LocalScript 
+coroutine.wrap(SSDAB_fake_script)()
+local function HMCSSFV_fake_script() -- chickenBtn.LocalScript 
 	local script = Instance.new('LocalScript', chickenBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -972,8 +1077,8 @@ local function NMAJMVS_fake_script() -- chickenBtn.LocalScript
 		Event:FireServer(A_1)
 	end)
 end
-coroutine.wrap(NMAJMVS_fake_script)()
-local function JNBUFZY_fake_script() -- destroyBtn.textColourChange 
+coroutine.wrap(HMCSSFV_fake_script)()
+local function JYEI_fake_script() -- destroyBtn.textColourChange 
 	local script = Instance.new('LocalScript', destroyBtn)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -984,16 +1089,16 @@ local function JNBUFZY_fake_script() -- destroyBtn.textColourChange
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
 end
-coroutine.wrap(JNBUFZY_fake_script)()
-local function OMVHW_fake_script() -- destroyBtn.LocalScript 
+coroutine.wrap(JYEI_fake_script)()
+local function GJZSWF_fake_script() -- destroyBtn.LocalScript 
 	local script = Instance.new('LocalScript', destroyBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(OMVHW_fake_script)()
-local function PUXV_fake_script() -- autobuildBtn.LocalScript 
+coroutine.wrap(GJZSWF_fake_script)()
+local function QFHQBIW_fake_script() -- autobuildBtn.LocalScript 
 	local script = Instance.new('LocalScript', autobuildBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1017,8 +1122,8 @@ local function PUXV_fake_script() -- autobuildBtn.LocalScript
 		
 	end)
 end
-coroutine.wrap(PUXV_fake_script)()
-local function NRAFE_fake_script() -- receivedBtn.LocalScript 
+coroutine.wrap(QFHQBIW_fake_script)()
+local function VLJPS_fake_script() -- receivedBtn.LocalScript 
 	local script = Instance.new('LocalScript', receivedBtn)
 
 	local toggle = false
@@ -1047,8 +1152,8 @@ local function NRAFE_fake_script() -- receivedBtn.LocalScript
 		
 	end)
 end
-coroutine.wrap(NRAFE_fake_script)()
-local function PSSO_fake_script() -- autobuyBtn.LocalScript 
+coroutine.wrap(VLJPS_fake_script)()
+local function ECYY_fake_script() -- autobuyBtn.LocalScript 
 	local script = Instance.new('LocalScript', autobuyBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1062,8 +1167,8 @@ local function PSSO_fake_script() -- autobuyBtn.LocalScript
 		
 	end)
 end
-coroutine.wrap(PSSO_fake_script)()
-local function BPMXU_fake_script() -- OpenBtn.textColourChange 
+coroutine.wrap(ECYY_fake_script)()
+local function PRAOEVR_fake_script() -- OpenBtn.textColourChange 
 	local script = Instance.new('LocalScript', OpenBtn)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -1074,8 +1179,8 @@ local function BPMXU_fake_script() -- OpenBtn.textColourChange
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
 end
-coroutine.wrap(BPMXU_fake_script)()
-local function VVJEW_fake_script() -- OpenBtn.LocalScript 
+coroutine.wrap(PRAOEVR_fake_script)()
+local function SFVFEX_fake_script() -- OpenBtn.LocalScript 
 	local script = Instance.new('LocalScript', OpenBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1083,8 +1188,8 @@ local function VVJEW_fake_script() -- OpenBtn.LocalScript
 		script.Parent.Parent.Parent.Main.Visible = true
 	end)
 end
-coroutine.wrap(VVJEW_fake_script)()
-local function SKJDHG_fake_script() -- Inferna.alert 
+coroutine.wrap(SFVFEX_fake_script)()
+local function WCMBXQN_fake_script() -- Inferna.alert 
 	local script = Instance.new('LocalScript', Inferna)
 
 	local starterGui = game:GetService("StarterGui")
@@ -1095,13 +1200,16 @@ local function SKJDHG_fake_script() -- Inferna.alert
 		Title = "Inferna",
 		Text = "Inferna has loaded in, enjoy."
 	})
+	
+	script.Parent.Welcome.Visible = false
+	script.Parent.OpenFrm.Visible = true
 end
-coroutine.wrap(SKJDHG_fake_script)()
-local function PPEOM_fake_script() -- Inferna.core 
+coroutine.wrap(WCMBXQN_fake_script)()
+local function DDRKGY_fake_script() -- Inferna.core 
 	local script = Instance.new('LocalScript', Inferna)
 
 	script.Parent.Main.Active = true
 	script.Parent.Main.Draggable = true
 	script.Parent.Parent = game.CoreGui
 end
-coroutine.wrap(PPEOM_fake_script)()
+coroutine.wrap(DDRKGY_fake_script)()
