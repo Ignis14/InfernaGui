@@ -1,0 +1,1107 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Inferna = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local subjectChoose = Instance.new("ImageLabel")
+local PlayerBtn = Instance.new("TextButton")
+local farmBtn = Instance.new("TextButton")
+local teamBtn = Instance.new("TextButton")
+local extraBtn = Instance.new("TextButton")
+local closeBtn = Instance.new("TextButton")
+local categories = Instance.new("ImageLabel")
+local Player = Instance.new("Frame")
+local altDelete = Instance.new("TextButton")
+local wsSub = Instance.new("TextLabel")
+local wsAmount = Instance.new("TextBox")
+local wsExecute = Instance.new("TextButton")
+local jpExecute = Instance.new("TextButton")
+local jpAmount = Instance.new("TextBox")
+local jpSub = Instance.new("TextLabel")
+local flyBtn = Instance.new("TextButton")
+local Autofarm = Instance.new("Frame")
+local startBtn = Instance.new("TextButton")
+local stopBtn = Instance.new("TextButton")
+local afkBtn = Instance.new("TextButton")
+local Teams = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local whiteBtn = Instance.new("TextButton")
+local blackBtn = Instance.new("TextButton")
+local redBtn = Instance.new("TextButton")
+local blueBtn = Instance.new("TextButton")
+local pinkBtn = Instance.new("TextButton")
+local greenBtn = Instance.new("TextButton")
+local yellowBtn = Instance.new("TextButton")
+local Extras = Instance.new("Frame")
+local morphTitle = Instance.new("TextLabel")
+local penguinBtn = Instance.new("TextButton")
+local foxBtn = Instance.new("TextButton")
+local chickenBtn = Instance.new("TextButton")
+local destroyBtn = Instance.new("TextButton")
+local autobuildBtn = Instance.new("TextButton")
+local receivedBtn = Instance.new("TextButton")
+local autobuyBtn = Instance.new("TextButton")
+local OpenFrm = Instance.new("ImageLabel")
+local OpenBtn = Instance.new("TextButton")
+
+--Properties:
+
+Inferna.Name = "Inferna"
+Inferna.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Inferna.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = Inferna
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.0106250001, 0, 0.612121224, 0)
+Main.Size = UDim2.new(0.316249996, 0, 0.369696975, 0)
+Main.Visible = false
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(30, 30, 30)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0, 0, 0.0262295082, 0)
+Title.Size = UDim2.new(0.316205531, 0, 0.108196735, 0)
+Title.ZIndex = 2
+Title.Font = Enum.Font.Highway
+Title.Text = "Inferna"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+subjectChoose.Name = "subjectChoose"
+subjectChoose.Parent = Main
+subjectChoose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+subjectChoose.BackgroundTransparency = 1.000
+subjectChoose.Position = UDim2.new(0.0118577071, 0, 0.0262295082, 0)
+subjectChoose.Size = UDim2.new(0.304347813, 0, 0.947540998, 0)
+subjectChoose.Image = "rbxassetid://3570695787"
+subjectChoose.ImageColor3 = Color3.fromRGB(35, 35, 35)
+subjectChoose.ScaleType = Enum.ScaleType.Slice
+subjectChoose.SliceCenter = Rect.new(100, 100, 100, 100)
+subjectChoose.SliceScale = 0.120
+
+PlayerBtn.Name = "PlayerBtn"
+PlayerBtn.Parent = subjectChoose
+PlayerBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerBtn.BackgroundTransparency = 1.000
+PlayerBtn.Position = UDim2.new(0, 0, 0.19016394, 0)
+PlayerBtn.Size = UDim2.new(1, 0, 0.144262299, 0)
+PlayerBtn.Font = Enum.Font.Oswald
+PlayerBtn.Text = "Player"
+PlayerBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerBtn.TextScaled = true
+PlayerBtn.TextSize = 14.000
+PlayerBtn.TextWrapped = true
+
+farmBtn.Name = "farmBtn"
+farmBtn.Parent = subjectChoose
+farmBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+farmBtn.BackgroundTransparency = 1.000
+farmBtn.Position = UDim2.new(0, 0, 0.334426224, 0)
+farmBtn.Size = UDim2.new(1, 0, 0.144262299, 0)
+farmBtn.Font = Enum.Font.Oswald
+farmBtn.Text = "Auto Farm"
+farmBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+farmBtn.TextScaled = true
+farmBtn.TextSize = 14.000
+farmBtn.TextWrapped = true
+
+teamBtn.Name = "teamBtn"
+teamBtn.Parent = subjectChoose
+teamBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+teamBtn.BackgroundTransparency = 1.000
+teamBtn.Position = UDim2.new(0, 0, 0.478688538, 0)
+teamBtn.Size = UDim2.new(1, 0, 0.144262299, 0)
+teamBtn.Font = Enum.Font.Oswald
+teamBtn.Text = "Teams"
+teamBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+teamBtn.TextScaled = true
+teamBtn.TextSize = 14.000
+teamBtn.TextWrapped = true
+
+extraBtn.Name = "extraBtn"
+extraBtn.Parent = subjectChoose
+extraBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extraBtn.BackgroundTransparency = 1.000
+extraBtn.Position = UDim2.new(0, 0, 0.622950852, 0)
+extraBtn.Size = UDim2.new(1, 0, 0.144262299, 0)
+extraBtn.Font = Enum.Font.Oswald
+extraBtn.Text = "Extra"
+extraBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+extraBtn.TextScaled = true
+extraBtn.TextSize = 14.000
+extraBtn.TextWrapped = true
+
+closeBtn.Name = "closeBtn"
+closeBtn.Parent = Main
+closeBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closeBtn.BackgroundTransparency = 1.000
+closeBtn.Position = UDim2.new(0.0118577071, 0, 0.849180341, 0)
+closeBtn.Size = UDim2.new(0.302371532, 0, 0.124590166, 0)
+closeBtn.Font = Enum.Font.Oswald
+closeBtn.Text = "Close"
+closeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+closeBtn.TextScaled = true
+closeBtn.TextSize = 14.000
+closeBtn.TextWrapped = true
+
+categories.Name = "categories"
+categories.Parent = Main
+categories.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+categories.BackgroundTransparency = 1.000
+categories.Position = UDim2.new(0.32806325, 0, 0.0262295082, 0)
+categories.Size = UDim2.new(0.656126499, 0, 0.947540998, 0)
+categories.Image = "rbxassetid://3570695787"
+categories.ImageColor3 = Color3.fromRGB(35, 35, 35)
+categories.ScaleType = Enum.ScaleType.Slice
+categories.SliceCenter = Rect.new(100, 100, 100, 100)
+categories.SliceScale = 0.120
+
+Player.Name = "Player"
+Player.Parent = categories
+Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Player.BackgroundTransparency = 1.000
+Player.Size = UDim2.new(1, 0, 1, 0)
+Player.Visible = false
+
+altDelete.Name = "altDelete"
+altDelete.Parent = Player
+altDelete.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+altDelete.BackgroundTransparency = 1.000
+altDelete.Position = UDim2.new(0.0692771077, 0, 0.0380622819, 0)
+altDelete.Size = UDim2.new(0.487951815, 0, 0.148788929, 0)
+altDelete.Font = Enum.Font.SourceSans
+altDelete.Text = "Alt + Click = Delete"
+altDelete.TextColor3 = Color3.fromRGB(255, 255, 255)
+altDelete.TextScaled = true
+altDelete.TextSize = 14.000
+altDelete.TextWrapped = true
+
+wsSub.Name = "wsSub"
+wsSub.Parent = Player
+wsSub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+wsSub.BackgroundTransparency = 1.000
+wsSub.Position = UDim2.new(0.0692771077, 0, 0.242214546, 0)
+wsSub.Size = UDim2.new(0.409638554, 0, 0.0899653956, 0)
+wsSub.Text = "Walkspeed"
+wsSub.TextColor3 = Color3.fromRGB(255, 255, 255)
+wsSub.TextScaled = true
+wsSub.TextSize = 14.000
+wsSub.TextWrapped = true
+
+wsAmount.Name = "wsAmount"
+wsAmount.Parent = Player
+wsAmount.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+wsAmount.BorderSizePixel = 0
+wsAmount.Position = UDim2.new(0.0963855386, 0, 0.359861583, 0)
+wsAmount.Size = UDim2.new(0.340361446, 0, 0.117647059, 0)
+wsAmount.PlaceholderText = "0"
+wsAmount.Text = ""
+wsAmount.TextColor3 = Color3.fromRGB(255, 255, 255)
+wsAmount.TextScaled = true
+wsAmount.TextSize = 14.000
+wsAmount.TextWrapped = true
+
+wsExecute.Name = "wsExecute"
+wsExecute.Parent = Player
+wsExecute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+wsExecute.BackgroundTransparency = 1.000
+wsExecute.Position = UDim2.new(0.478915662, 0, 0.359861583, 0)
+wsExecute.Size = UDim2.new(0.210843369, 0, 0.117647059, 0)
+wsExecute.Text = "Execute"
+wsExecute.TextColor3 = Color3.fromRGB(255, 255, 255)
+wsExecute.TextScaled = true
+wsExecute.TextSize = 14.000
+wsExecute.TextWrapped = true
+
+jpExecute.Name = "jpExecute"
+jpExecute.Parent = Player
+jpExecute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jpExecute.BackgroundTransparency = 1.000
+jpExecute.Position = UDim2.new(0.478915662, 0, 0.619377136, 0)
+jpExecute.Size = UDim2.new(0.210843369, 0, 0.117647059, 0)
+jpExecute.Text = "Execute"
+jpExecute.TextColor3 = Color3.fromRGB(255, 255, 255)
+jpExecute.TextScaled = true
+jpExecute.TextSize = 14.000
+jpExecute.TextWrapped = true
+
+jpAmount.Name = "jpAmount"
+jpAmount.Parent = Player
+jpAmount.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+jpAmount.BorderSizePixel = 0
+jpAmount.Position = UDim2.new(0.0963855386, 0, 0.619377136, 0)
+jpAmount.Size = UDim2.new(0.340361446, 0, 0.117647059, 0)
+jpAmount.PlaceholderText = "0"
+jpAmount.Text = ""
+jpAmount.TextColor3 = Color3.fromRGB(255, 255, 255)
+jpAmount.TextScaled = true
+jpAmount.TextSize = 14.000
+jpAmount.TextWrapped = true
+
+jpSub.Name = "jpSub"
+jpSub.Parent = Player
+jpSub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jpSub.BackgroundTransparency = 1.000
+jpSub.Position = UDim2.new(0.0692771077, 0, 0.501730144, 0)
+jpSub.Size = UDim2.new(0.409638554, 0, 0.0899653956, 0)
+jpSub.Text = "Jump Power"
+jpSub.TextColor3 = Color3.fromRGB(255, 255, 255)
+jpSub.TextScaled = true
+jpSub.TextSize = 14.000
+jpSub.TextWrapped = true
+
+flyBtn.Name = "flyBtn"
+flyBtn.Parent = Player
+flyBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+flyBtn.BackgroundTransparency = 1.000
+flyBtn.Position = UDim2.new(0.0963855386, 0, 0.823529363, 0)
+flyBtn.Size = UDim2.new(0.340361446, 0, 0.103806227, 0)
+flyBtn.Text = "Fly"
+flyBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+flyBtn.TextScaled = true
+flyBtn.TextSize = 14.000
+flyBtn.TextWrapped = true
+
+Autofarm.Name = "Autofarm"
+Autofarm.Parent = categories
+Autofarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Autofarm.BackgroundTransparency = 1.000
+Autofarm.Size = UDim2.new(1, 0, 1, 0)
+Autofarm.Visible = false
+
+startBtn.Name = "startBtn"
+startBtn.Parent = Autofarm
+startBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+startBtn.BackgroundTransparency = 1.000
+startBtn.Position = UDim2.new(0.0933734924, 0, 0.0622837357, 0)
+startBtn.Size = UDim2.new(0.337349385, 0, 0.124567471, 0)
+startBtn.Text = "Start Auto Farm"
+startBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+startBtn.TextScaled = true
+startBtn.TextSize = 14.000
+startBtn.TextWrapped = true
+
+stopBtn.Name = "stopBtn"
+stopBtn.Parent = Autofarm
+stopBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stopBtn.BackgroundTransparency = 1.000
+stopBtn.Position = UDim2.new(0.563252985, 0, 0.0622837357, 0)
+stopBtn.Size = UDim2.new(0.337349385, 0, 0.124567471, 0)
+stopBtn.Text = "Stop Auto Farm"
+stopBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+stopBtn.TextScaled = true
+stopBtn.TextSize = 14.000
+stopBtn.TextWrapped = true
+
+afkBtn.Name = "afkBtn"
+afkBtn.Parent = Autofarm
+afkBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+afkBtn.BackgroundTransparency = 1.000
+afkBtn.Position = UDim2.new(0.0933734626, 0, 0.332179904, 0)
+afkBtn.Size = UDim2.new(0.337349385, 0, 0.124567471, 0)
+afkBtn.Text = "Anti-AFK"
+afkBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+afkBtn.TextScaled = true
+afkBtn.TextSize = 14.000
+afkBtn.TextWrapped = true
+
+Teams.Name = "Teams"
+Teams.Parent = categories
+Teams.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teams.BackgroundTransparency = 1.000
+Teams.Size = UDim2.new(1, 0, 1, 0)
+Teams.Visible = false
+
+Title_2.Name = "Title"
+Title_2.Parent = Teams
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.198795184, 0, 0, 0)
+Title_2.Size = UDim2.new(0.602409661, 0, 0.114186853, 0)
+Title_2.Font = Enum.Font.Oswald
+Title_2.Text = "Change Teams"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+whiteBtn.Name = "whiteBtn"
+whiteBtn.Parent = Teams
+whiteBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+whiteBtn.BackgroundTransparency = 1.000
+whiteBtn.Position = UDim2.new(0.0813253, 0, 0.186851203, 0)
+whiteBtn.Size = UDim2.new(0.316265047, 0, 0.124567471, 0)
+whiteBtn.Text = "White"
+whiteBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+whiteBtn.TextScaled = true
+whiteBtn.TextSize = 14.000
+whiteBtn.TextWrapped = true
+
+blackBtn.Name = "blackBtn"
+blackBtn.Parent = Teams
+blackBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+blackBtn.BackgroundTransparency = 1.000
+blackBtn.Position = UDim2.new(0.578313231, 0, 0.186851203, 0)
+blackBtn.Size = UDim2.new(0.316265047, 0, 0.124567471, 0)
+blackBtn.Text = "Black"
+blackBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+blackBtn.TextScaled = true
+blackBtn.TextSize = 14.000
+blackBtn.TextWrapped = true
+
+redBtn.Name = "redBtn"
+redBtn.Parent = Teams
+redBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+redBtn.BackgroundTransparency = 1.000
+redBtn.Position = UDim2.new(0.0813253, 0, 0.397923857, 0)
+redBtn.Size = UDim2.new(0.316265047, 0, 0.124567471, 0)
+redBtn.Text = "Red"
+redBtn.TextColor3 = Color3.fromRGB(255, 0, 0)
+redBtn.TextScaled = true
+redBtn.TextSize = 14.000
+redBtn.TextWrapped = true
+
+blueBtn.Name = "blueBtn"
+blueBtn.Parent = Teams
+blueBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+blueBtn.BackgroundTransparency = 1.000
+blueBtn.Position = UDim2.new(0.578313231, 0, 0.397923857, 0)
+blueBtn.Size = UDim2.new(0.316265047, 0, 0.124567471, 0)
+blueBtn.Text = "Blue"
+blueBtn.TextColor3 = Color3.fromRGB(0, 0, 255)
+blueBtn.TextScaled = true
+blueBtn.TextSize = 14.000
+blueBtn.TextWrapped = true
+
+pinkBtn.Name = "pinkBtn"
+pinkBtn.Parent = Teams
+pinkBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+pinkBtn.BackgroundTransparency = 1.000
+pinkBtn.Position = UDim2.new(0.0813253, 0, 0.622837365, 0)
+pinkBtn.Size = UDim2.new(0.316265047, 0, 0.124567471, 0)
+pinkBtn.Text = "Magenta"
+pinkBtn.TextColor3 = Color3.fromRGB(255, 85, 255)
+pinkBtn.TextScaled = true
+pinkBtn.TextSize = 14.000
+pinkBtn.TextWrapped = true
+
+greenBtn.Name = "greenBtn"
+greenBtn.Parent = Teams
+greenBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+greenBtn.BackgroundTransparency = 1.000
+greenBtn.Position = UDim2.new(0.578313231, 0, 0.622837365, 0)
+greenBtn.Size = UDim2.new(0.316265047, 0, 0.124567471, 0)
+greenBtn.Text = "Green"
+greenBtn.TextColor3 = Color3.fromRGB(85, 255, 127)
+greenBtn.TextScaled = true
+greenBtn.TextSize = 14.000
+greenBtn.TextWrapped = true
+
+yellowBtn.Name = "yellowBtn"
+yellowBtn.Parent = Teams
+yellowBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yellowBtn.BackgroundTransparency = 1.000
+yellowBtn.Position = UDim2.new(0.340361446, 0, 0.809688568, 0)
+yellowBtn.Size = UDim2.new(0.316265047, 0, 0.124567471, 0)
+yellowBtn.Text = "Yellow"
+yellowBtn.TextColor3 = Color3.fromRGB(255, 255, 127)
+yellowBtn.TextScaled = true
+yellowBtn.TextSize = 14.000
+yellowBtn.TextWrapped = true
+
+Extras.Name = "Extras"
+Extras.Parent = categories
+Extras.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Extras.BackgroundTransparency = 1.000
+Extras.Size = UDim2.new(1, 0, 1, 0)
+Extras.Visible = false
+
+morphTitle.Name = "morphTitle"
+morphTitle.Parent = Extras
+morphTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+morphTitle.BackgroundTransparency = 1.000
+morphTitle.Size = UDim2.new(1, 0, 0.114186853, 0)
+morphTitle.Font = Enum.Font.Oswald
+morphTitle.Text = "Morphs"
+morphTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+morphTitle.TextScaled = true
+morphTitle.TextSize = 14.000
+morphTitle.TextWrapped = true
+
+penguinBtn.Name = "penguinBtn"
+penguinBtn.Parent = Extras
+penguinBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+penguinBtn.BackgroundTransparency = 1.000
+penguinBtn.Position = UDim2.new(0.0210843366, 0, 0.159169555, 0)
+penguinBtn.Size = UDim2.new(0.2740964, 0, 0.121107265, 0)
+penguinBtn.Text = "Penguin"
+penguinBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+penguinBtn.TextScaled = true
+penguinBtn.TextSize = 14.000
+penguinBtn.TextWrapped = true
+
+foxBtn.Name = "foxBtn"
+foxBtn.Parent = Extras
+foxBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+foxBtn.BackgroundTransparency = 1.000
+foxBtn.Position = UDim2.new(0.361445785, 0, 0.159169555, 0)
+foxBtn.Size = UDim2.new(0.2740964, 0, 0.121107265, 0)
+foxBtn.Text = "Fox"
+foxBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+foxBtn.TextScaled = true
+foxBtn.TextSize = 14.000
+foxBtn.TextWrapped = true
+
+chickenBtn.Name = "chickenBtn"
+chickenBtn.Parent = Extras
+chickenBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+chickenBtn.BackgroundTransparency = 1.000
+chickenBtn.Position = UDim2.new(0.695783138, 0, 0.159169555, 0)
+chickenBtn.Size = UDim2.new(0.2740964, 0, 0.121107265, 0)
+chickenBtn.Text = "Chicken"
+chickenBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+chickenBtn.TextScaled = true
+chickenBtn.TextSize = 14.000
+chickenBtn.TextWrapped = true
+
+destroyBtn.Name = "destroyBtn"
+destroyBtn.Parent = Extras
+destroyBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+destroyBtn.BackgroundTransparency = 1.000
+destroyBtn.Position = UDim2.new(0.0512048192, 0, 0.822962105, 0)
+destroyBtn.Size = UDim2.new(0.331325352, 0, 0.140427679, 0)
+destroyBtn.Font = Enum.Font.Oswald
+destroyBtn.Text = "Destroy Gui"
+destroyBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+destroyBtn.TextScaled = true
+destroyBtn.TextSize = 14.000
+destroyBtn.TextWrapped = true
+
+autobuildBtn.Name = "autobuildBtn"
+autobuildBtn.Parent = Extras
+autobuildBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autobuildBtn.BackgroundTransparency = 1.000
+autobuildBtn.Position = UDim2.new(0.0210843366, 0, 0.411764711, 0)
+autobuildBtn.Size = UDim2.new(0.2740964, 0, 0.103806227, 0)
+autobuildBtn.Text = "Auto Build"
+autobuildBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+autobuildBtn.TextScaled = true
+autobuildBtn.TextSize = 14.000
+autobuildBtn.TextWrapped = true
+
+receivedBtn.Name = "receivedBtn"
+receivedBtn.Parent = Extras
+receivedBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+receivedBtn.BackgroundTransparency = 1.000
+receivedBtn.Position = UDim2.new(0.361445785, 0, 0.411764711, 0)
+receivedBtn.Size = UDim2.new(0.2740964, 0, 0.103806227, 0)
+receivedBtn.Text = "Toggle items received menu"
+receivedBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+receivedBtn.TextScaled = true
+receivedBtn.TextSize = 14.000
+receivedBtn.TextWrapped = true
+
+autobuyBtn.Name = "autobuyBtn"
+autobuyBtn.Parent = Extras
+autobuyBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autobuyBtn.BackgroundTransparency = 1.000
+autobuyBtn.Position = UDim2.new(0.695783138, 0, 0.411764711, 0)
+autobuyBtn.Size = UDim2.new(0.2740964, 0, 0.103806227, 0)
+autobuyBtn.Text = "Auto Buy"
+autobuyBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+autobuyBtn.TextScaled = true
+autobuyBtn.TextSize = 14.000
+autobuyBtn.TextWrapped = true
+
+OpenFrm.Name = "OpenFrm"
+OpenFrm.Parent = Inferna
+OpenFrm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenFrm.BackgroundTransparency = 1.000
+OpenFrm.Position = UDim2.new(0.00875000004, 0, 0.963636398, 0)
+OpenFrm.Size = UDim2.new(0.0443749987, 0, 0.0278787874, 0)
+OpenFrm.Visible = false
+OpenFrm.Image = "rbxassetid://3570695787"
+OpenFrm.ImageColor3 = Color3.fromRGB(40, 40, 40)
+OpenFrm.ScaleType = Enum.ScaleType.Slice
+OpenFrm.SliceCenter = Rect.new(100, 100, 100, 100)
+OpenFrm.SliceScale = 0.120
+
+OpenBtn.Name = "OpenBtn"
+OpenBtn.Parent = OpenFrm
+OpenBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenBtn.BackgroundTransparency = 1.000
+OpenBtn.Size = UDim2.new(1, 0, 1, 0)
+OpenBtn.Text = "Open"
+OpenBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenBtn.TextScaled = true
+OpenBtn.TextSize = 14.000
+OpenBtn.TextWrapped = true
+
+-- Scripts:
+
+local function GFYGB_fake_script() -- PlayerBtn.textColourChange 
+	local script = Instance.new('LocalScript', PlayerBtn)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(85, 255, 255)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+end
+coroutine.wrap(GFYGB_fake_script)()
+local function HFZIWY_fake_script() -- PlayerBtn.LocalScript 
+	local script = Instance.new('LocalScript', PlayerBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.categories.Player.Visible = true
+		script.Parent.Parent.Parent.categories.Autofarm.Visible = false
+		script.Parent.Parent.Parent.categories.Extras.Visible = false
+		script.Parent.Parent.Parent.categories.Teams.Visible = false
+	end)
+end
+coroutine.wrap(HFZIWY_fake_script)()
+local function OYYVM_fake_script() -- farmBtn.textColourChange 
+	local script = Instance.new('LocalScript', farmBtn)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(85, 255, 255)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+end
+coroutine.wrap(OYYVM_fake_script)()
+local function PEBSJD_fake_script() -- farmBtn.LocalScript 
+	local script = Instance.new('LocalScript', farmBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.categories.Player.Visible = false
+		script.Parent.Parent.Parent.categories.Autofarm.Visible = true
+		script.Parent.Parent.Parent.categories.Extras.Visible = false
+		script.Parent.Parent.Parent.categories.Teams.Visible = false
+	end)
+end
+coroutine.wrap(PEBSJD_fake_script)()
+local function RUQH_fake_script() -- teamBtn.textColourChange 
+	local script = Instance.new('LocalScript', teamBtn)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(85, 255, 255)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+end
+coroutine.wrap(RUQH_fake_script)()
+local function RZWB_fake_script() -- teamBtn.LocalScript 
+	local script = Instance.new('LocalScript', teamBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.categories.Player.Visible = false
+		script.Parent.Parent.Parent.categories.Autofarm.Visible = false
+		script.Parent.Parent.Parent.categories.Extras.Visible = false
+		script.Parent.Parent.Parent.categories.Teams.Visible = true
+	end)
+end
+coroutine.wrap(RZWB_fake_script)()
+local function PMIP_fake_script() -- extraBtn.textColourChange 
+	local script = Instance.new('LocalScript', extraBtn)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(85, 255, 255)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+end
+coroutine.wrap(PMIP_fake_script)()
+local function NFXAGG_fake_script() -- extraBtn.LocalScript 
+	local script = Instance.new('LocalScript', extraBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.categories.Player.Visible = false
+		script.Parent.Parent.Parent.categories.Autofarm.Visible = false
+		script.Parent.Parent.Parent.categories.Extras.Visible = true
+		script.Parent.Parent.Parent.categories.Teams.Visible = false
+	end)
+end
+coroutine.wrap(NFXAGG_fake_script)()
+local function VDZHGSV_fake_script() -- closeBtn.textColourChange 
+	local script = Instance.new('LocalScript', closeBtn)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(85, 255, 255)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+end
+coroutine.wrap(VDZHGSV_fake_script)()
+local function SHOH_fake_script() -- closeBtn.LocalScript 
+	local script = Instance.new('LocalScript', closeBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.OpenFrm.Visible = true
+	end)
+end
+coroutine.wrap(SHOH_fake_script)()
+local function MCACU_fake_script() -- altDelete.LocalScript 
+	local script = Instance.new('LocalScript', altDelete)
+
+	local Plr = game:GetService("Players").LocalPlayer
+	local Mouse = Plr:GetMouse()
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		Mouse.Button1Down:connect(function()
+			if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftAlt) then return end
+			if not Mouse.Target then return end
+			Mouse.Target:Destroy()
+		end)
+	end)
+end
+coroutine.wrap(MCACU_fake_script)()
+local function VEQLCPC_fake_script() -- wsExecute.LocalScript 
+	local script = Instance.new('LocalScript', wsExecute)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Parent.wsAmount.Text
+	end)
+end
+coroutine.wrap(VEQLCPC_fake_script)()
+local function MXNI_fake_script() -- jpExecute.LocalScript 
+	local script = Instance.new('LocalScript', jpExecute)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.Parent.jpAmount.Text
+	end)
+end
+coroutine.wrap(MXNI_fake_script)()
+local function KGUY_fake_script() -- flyBtn.LocalScript 
+	local script = Instance.new('LocalScript', flyBtn)
+
+	local speed = 50
+	
+	local c
+	local h
+	local bv
+	local bav
+	local cam
+	local flying
+	local p = game.Players.LocalPlayer
+	local buttons = {W = false, S = false, A = false, D = false, Moving = false}
+	
+	local startFly = function ()
+		if not p.Character or not p.Character.Head or flying then return end
+		c = p.Character
+		h = c.Humanoid
+		h.PlatformStand = true
+		cam = workspace:WaitForChild('Camera')
+		bv = Instance.new("BodyVelocity")
+		bav = Instance.new("BodyAngularVelocity")
+		bv.Velocity, bv.MaxForce, bv.P = Vector3.new(0, 0, 0), Vector3.new(10000, 10000, 10000), 1000
+		bav.AngularVelocity, bav.MaxTorque, bav.P = Vector3.new(0, 0, 0), Vector3.new(10000, 10000, 10000), 1000
+		bv.Parent = c.Head
+		bav.Parent = c.Head
+		flying = true
+		h.Died:connect(function() flying = false end)
+	end
+	
+	local endFly = function () -- Call this function to stop flying
+		if not p.Character or not flying then return end
+		h.PlatformStand = false
+		bv:Destroy()
+		bav:Destroy()
+		flying = false
+	end
+	
+	game:GetService("UserInputService").InputBegan:connect(function (input, GPE) 
+		if GPE then return end
+		for i, e in pairs(buttons) do
+			if i ~= "Moving" and input.KeyCode == Enum.KeyCode[i] then
+				buttons[i] = true
+				buttons.Moving = true
+			end
+		end
+	end)
+	
+	game:GetService("UserInputService").InputEnded:connect(function (input, GPE) 
+		if GPE then return end
+		local a = false
+		for i, e in pairs(buttons) do
+			if i ~= "Moving" then
+				if input.KeyCode == Enum.KeyCode[i] then
+					buttons[i] = false
+				end
+				if buttons[i] then a = true end
+			end
+		end
+		buttons.Moving = a
+	end)
+	
+	local setVec = function (vec)
+		return vec * (speed / vec.Magnitude)
+	end
+	
+	game:GetService("RunService").Heartbeat:connect(function (step) -- The actual fly function, called every frame
+		if flying and c and c.PrimaryPart then
+			local p = c.PrimaryPart.Position
+			local cf = cam.CFrame
+			local ax, ay, az = cf:toEulerAnglesXYZ()
+			c:SetPrimaryPartCFrame(CFrame.new(p.x, p.y, p.z) * CFrame.Angles(ax, ay, az))
+			if buttons.Moving then
+				local t = Vector3.new()
+				if buttons.W then t = t + (setVec(cf.lookVector)) end
+				if buttons.S then t = t - (setVec(cf.lookVector)) end
+				if buttons.A then t = t - (setVec(cf.rightVector)) end
+				if buttons.D then t = t + (setVec(cf.rightVector)) end
+				c:TranslateBy(t * step)
+			end
+		end
+	end)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if flying == false then
+			startFly()
+		else
+			endFly()
+		end
+	end)
+end
+coroutine.wrap(KGUY_fake_script)()
+local function GUXD_fake_script() -- startBtn.LocalScript 
+	local script = Instance.new('LocalScript', startBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local starterGui = game:GetService("StarterGui")
+		starterGui:SetCore("SendNotification",{
+			Title = "Script Executed ✔",
+			Text = "Autofarm has been loaded [Currently no stop]"
+		})
+		
+		
+		local args = { [1] = true } workspace.RefreshLocks:FireServer(unpack(args))
+		noclip = false
+		game:GetService('RunService').Stepped:connect(function()
+			if noclip then
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			end
+		end)
+		noclip = not noclip
+		game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		local Character = game:GetService('Players').LocalPlayer.Character
+		wait(3)
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-69.0208588, 108.308792, 644.431091))
+		wait(1)
+		local CFrameEnd = CFrame.new(-41.7870445, 77.1494141, 8675.35059) -- Place your coords in here
+		local Time = 33-- Time in seconds
+		local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+		tween:Play()
+		tween.Completed:Wait(X) --- Completes, no need for additional wait time
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-63.2413521, -357.34967, 8819.09277)) wait(0.5)
+		local CFrameEnd = CFrame.new(-55.8801956, -361.116333, 9488.1377) -- Place your coords in here
+		local Time = 0 -- Time in seconds
+		local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+		tween:Play()
+		tween.Completed:Wait(X)
+		game.Players.LocalPlayer.CharacterAdded:Connect(function()
+			wait(3)
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-69.0208588, 108.308792, 644.431091))
+			wait(1)
+			local CFrameEnd = CFrame.new(-41.7870445, 77.1494141, 8675.35059) -- Place your coords in here
+			local Time = 33-- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait(X) --- Completes, no need for additional wait time
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-63.2413521, -357.34967, 8819.09277)) wait(0.5)
+			local CFrameEnd = CFrame.new(-55.8801956, -361.116333, 9488.1377) -- Place your coords in here
+			local Time = 0 -- Time in seconds
+			local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+			tween:Play()
+			tween.Completed:Wait(X)
+		end)
+		for i=1, math.huge do
+			wait(200)
+			game.Players.LocalPlayer.Character.Head:Destroy() end
+	end)
+end
+coroutine.wrap(GUXD_fake_script)()
+local function HFKIHAE_fake_script() -- stopBtn.LocalScript 
+	local script = Instance.new('LocalScript', stopBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		print("Not In Use")
+	end)
+end
+coroutine.wrap(HFKIHAE_fake_script)()
+local function HNNCBHS_fake_script() -- afkBtn.LocalScript 
+	local script = Instance.new('LocalScript', afkBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		
+		local starterGui = game:GetService("StarterGui")
+		starterGui:SetCore("SendNotification",{
+			Title = "Script Executed ✔",
+			Text = "Anti-AFK has been loaded"
+		})
+		
+		
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+			vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+			wait(1)
+			vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+	end)
+end
+coroutine.wrap(HNNCBHS_fake_script)()
+local function ARVD_fake_script() -- Teams.LocalScript 
+	local script = Instance.new('LocalScript', Teams)
+
+	local p = script.Parent
+	local white = p.whiteBtn
+	local black = p.blackBtn
+	local blue = p.blueBtn
+	local green = p.greenBtn
+	local yellow = p.yellowBtn
+	local red = p.redBtn
+	local pink = p.pinkBtn
+	
+	white.MouseButton1Down:Connect(function()
+		local Plr = game.Players.LocalPlayer
+		local A_1 = BrickColor.new("White")
+		local A_2 = game:GetService("Players").LocalPlayer
+		local Event = game:GetService("Workspace").ChangeTeam
+		Event:FireServer(A_1, A_2)
+	end)
+	
+	black.MouseButton1Down:Connect(function()
+		Plr = game.Players.LocalPlayer
+		local A_1 = BrickColor.new("Black")
+		local A_2 = game:GetService("Players").LocalPlayer
+		local Event = game:GetService("Workspace").ChangeTeam
+		Event:FireServer(A_1, A_2)
+	end)
+	
+	yellow.MouseButton1Down:Connect(function()
+		Plr = game.Players.LocalPlayer
+		local A_1 = BrickColor.new("New Yeller")
+		local A_2 = game:GetService("Players").LocalPlayer
+		local Event = game:GetService("Workspace").ChangeTeam
+		Event:FireServer(A_1, A_2)
+	end)
+	
+	green.MouseButton1Down:Connect(function()
+		Plr = game.Players.LocalPlayer
+		local A_1 = BrickColor.new("Camo")
+		local A_2 = game:GetService("Players").LocalPlayer
+		local Event = game:GetService("Workspace").ChangeTeam
+		Event:FireServer(A_1, A_2)
+	end)
+	
+	blue.MouseButton1Down:Connect(function()
+		Plr = game.Players.LocalPlayer
+		local A_1 = BrickColor.new("Really blue")
+		local A_2 = game:GetService("Players").LocalPlayer
+		local Event = game:GetService("Workspace").ChangeTeam
+		Event:FireServer(A_1, A_2)
+	end)
+	
+	red.MouseButton1Down:Connect(function()
+		Plr = game.Players.LocalPlayer
+		local A_1 = BrickColor.new("Really red")
+		local A_2 = game:GetService("Players").LocalPlayer
+		local Event = game:GetService("Workspace").ChangeTeam
+		Event:FireServer(A_1, A_2)
+	end)
+	
+	pink.MouseButton1Down:Connect(function()
+		Plr = game.Players.LocalPlayer
+		local A_1 = BrickColor.new("Hot pink")
+		local A_2 = game:GetService("Players").LocalPlayer
+		local Event = game:GetService("Workspace").ChangeTeam
+		Event:FireServer(A_1, A_2)
+	end)
+end
+coroutine.wrap(ARVD_fake_script)()
+local function VVKQ_fake_script() -- penguinBtn.LocalScript 
+	local script = Instance.new('LocalScript', penguinBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local A_1 = "PenguinCharacter"
+		local Event = game:GetService("Workspace").ChangeCharacter
+		Event:FireServer(A_1)
+	end)
+end
+coroutine.wrap(VVKQ_fake_script)()
+local function FJBUA_fake_script() -- foxBtn.LocalScript 
+	local script = Instance.new('LocalScript', foxBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local A_1 = "FoxCharacter"
+		local Event = game:GetService("Workspace").ChangeCharacter
+		Event:FireServer(A_1)
+	end)
+end
+coroutine.wrap(FJBUA_fake_script)()
+local function GQUX_fake_script() -- chickenBtn.LocalScript 
+	local script = Instance.new('LocalScript', chickenBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local A_1 = "ChickenCharacter"
+		local Event = game:GetService("Workspace").ChangeCharacter
+		Event:FireServer(A_1)
+	end)
+end
+coroutine.wrap(GQUX_fake_script)()
+local function BBFALAQ_fake_script() -- destroyBtn.textColourChange 
+	local script = Instance.new('LocalScript', destroyBtn)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(85, 255, 255)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+end
+coroutine.wrap(BBFALAQ_fake_script)()
+local function LBQRTX_fake_script() -- destroyBtn.LocalScript 
+	local script = Instance.new('LocalScript', destroyBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(LBQRTX_fake_script)()
+local function YDDW_fake_script() -- autobuildBtn.LocalScript 
+	local script = Instance.new('LocalScript', autobuildBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local starterGui = game:GetService("StarterGui")
+		starterGui:SetCore("SendNotification",{
+			Title = "Script Executed ✔",
+			Text = "Autobuild menu has been loaded"
+		})
+		
+		loadstring(game:HttpGet("http://dirtgui.xyz/BuildABoat.lua",true))()
+		
+		wait(5)
+		
+		for _,discordInvite in pairs(game:GetService("CoreGui"):GetDescendants()) do
+			if discordInvite:IsA("TextButton") then
+				if discordInvite.Text == "discord.gg/mFtEzKff3k" then
+					discordInvite.Parent:Destroy()
+				end
+			end
+		end
+		
+	end)
+end
+coroutine.wrap(YDDW_fake_script)()
+local function RBIOQXW_fake_script() -- receivedBtn.LocalScript 
+	local script = Instance.new('LocalScript', receivedBtn)
+
+	local toggle = false
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		local starterGui = game:GetService("StarterGui")
+		if toggle == false then
+			starterGui:SetCore("SendNotification",{
+				Title = "Script Executed ✔",
+				Text = "You will no longer see what you received from buying"
+			})
+			toggle = true
+			
+			game.Players.LocalPlayer.PlayerGui.ItemGained.Enabled = false
+			
+		else
+			starterGui:SetCore("SendNotification",{
+				Title = "Script Executed",
+				Text = "You will now see what you received from buying"
+			})
+			toggle = false
+			
+			game.Players.LocalPlayer.PlayerGui.ItemGained.Enabled = true
+			
+		end
+		
+	end)
+end
+coroutine.wrap(RBIOQXW_fake_script)()
+local function NBECYZ_fake_script() -- autobuyBtn.LocalScript 
+	local script = Instance.new('LocalScript', autobuyBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local starterGui = game:GetService("StarterGui")
+		starterGui:SetCore("SendNotification",{
+			Title = "Script Executed ✔",
+			Text = "Autobuy menu received"
+		})
+		
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TheArcticDev/Builds/main/BlockBuyer.lua'))()
+		
+	end)
+end
+coroutine.wrap(NBECYZ_fake_script)()
+local function XXHES_fake_script() -- OpenBtn.textColourChange 
+	local script = Instance.new('LocalScript', OpenBtn)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(85, 255, 255)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+end
+coroutine.wrap(XXHES_fake_script)()
+local function DXOZTV_fake_script() -- OpenBtn.LocalScript 
+	local script = Instance.new('LocalScript', OpenBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Main.Visible = true
+	end)
+end
+coroutine.wrap(DXOZTV_fake_script)()
+local function NJOX_fake_script() -- Inferna.alert 
+	local script = Instance.new('LocalScript', Inferna)
+
+	local starterGui = game:GetService("StarterGui")
+	
+	wait(3)
+	
+	starterGui:SetCore("SendNotification", {
+		Title = "Inferna",
+		Text = "Inferna has loaded in, enjoy."
+	})
+end
+coroutine.wrap(NJOX_fake_script)()
+local function FMOWPV_fake_script() -- Inferna.core 
+	local script = Instance.new('LocalScript', Inferna)
+
+	script.Parent.Main.Active = true
+	script.Parent.Main.Draggable = true
+	script.Parent.Parent = game.CoreGui
+end
+coroutine.wrap(FMOWPV_fake_script)()
